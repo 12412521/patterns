@@ -53,3 +53,5 @@ let ClientCode(factory: IFactory) =
 
 ClientCode(new MachineFactory())
 ClientCode(new BikeFactory())
+
+Singleton.singletonTest()
