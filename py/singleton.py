@@ -9,7 +9,7 @@ class DataBase:
     def __new__(cls) -> "DataBase":
         if not DataBase._instance:
             cls._instance = super().__new__(cls)
-            cls.data = {}
+            cls._instance.data = {}
         
         return cls._instance # type: ignore
     
